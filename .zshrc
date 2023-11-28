@@ -3,22 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export TZ=Asia/Shanghai
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias tos='/nas/lijing/tosutil'
-alias jihu='cd /vepfs-bj-user/home/lijing/jihulab/'
-alias nas='cd /nas/lijing'
-alias dl='cd /vepfs-bj-user/home/lijing/jihulab/dataloader'
-alias hd='cd /nas/lijing/HDVG-130M'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -80,7 +70,7 @@ alias hd='cd /nas/lijing/HDVG-130M'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z extract git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,22 +99,30 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias tos='/nas/lijing/tosutil'
+alias jihu='cd /vepfs/home/lijing/jihulab/'
+alias nas='cd /nas/lijing'
+alias dl='cd /vepfs/home/lijing/jihulab/dataloader'
+alias hd='cd /nas/lijing/HDVG-130M'
+alias home='cd /vepfs/home/lijing'
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/root/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/lijing/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/root/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/root/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/lijing/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/lijing/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/root/miniconda3/bin:$PATH"
+        export PATH="/home/lijing/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-export LC_ALL=zh_CN.UTF-8  
-export LANG=zh_CN.UTF-8
-source /nas/lijing/dev/Jingrc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
