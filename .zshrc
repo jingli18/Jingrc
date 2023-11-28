@@ -14,11 +14,11 @@ ZSH_THEME="robbyrussell"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias tos='/data/lijing/tosutil'
-alias jihu='cd /data/lijing/jihulab/'
-alias nas='cd /data/lijing'
-alias dl='cd /data/lijing/jihulab/dataloader'
-alias hd='cd /data/lijing/HDVG-130M'
+alias tos='/nas/lijing/tosutil'
+alias jihu='cd /vepfs-bj-user/home/lijing/jihulab/'
+alias nas='cd /nas/lijing'
+alias dl='cd /vepfs-bj-user/home/lijing/jihulab/dataloader'
+alias hd='cd /nas/lijing/HDVG-130M'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -80,7 +80,7 @@ alias hd='cd /data/lijing/HDVG-130M'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(z extract git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,3 +127,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 export LC_ALL=zh_CN.UTF-8  
 export LANG=zh_CN.UTF-8
+source /nas/lijing/dev/Jingrc/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
