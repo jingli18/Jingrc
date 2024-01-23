@@ -1,0 +1,10 @@
+cp .bashrc ~/.bashrc
+cp .vimrc ~/.vimrc
+cp .tmux.conf ~/.tmux.conf
+apt-get update
+apt-get install tmux
+#apt-get install zsh
+source ~/.bashrc
+
+source ~/.vimrc
+tmux
