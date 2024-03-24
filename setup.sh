@@ -1,10 +1,10 @@
-# cp .vimrc ~/.vimrc
-# cp .tmux.conf ~/.tmux.conf
-# apt-get update
-# apt-get install tmux
+cp .vimrc ~/.vimrc
+cp .tmux.conf ~/.tmux.conf
+apt-get update
+apt-get install tmux
 
-# apt-get install zsh
-# cp -r .oh-my-zsh ~/
+apt-get install zsh
+cp -r .oh-my-zsh ~/
 cp -r zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/
 cp -r zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/
 cp .zshrc ~/.zshrc
